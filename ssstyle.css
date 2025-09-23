@@ -51,12 +51,53 @@ body {
   padding: 16px;
 }
 
-.btn-custom-sky {
+.btn-custom-sky,
+.custom-date {
   background-color: #dbeafe;
 }
 
-.btn-custom-green {
+.btn-custom-green,
+.noreturn-box,
+.fulfilled-box,
+.paid-box {
   background-color: #dcfce7;
+}
+
+.btn-custom-orange,
+.pending-box {
+  background-color: #fef9c3;
+}
+
+.btn-custom-purple {
+  background-color: #f3e8ff;
+}
+
+.my-custom-svggraph {
+  fill: rgb(194, 118, 4);
+}
+
+.my-custom-box {
+  fill: rgb(156, 2, 156);
+}
+
+/* Box section */
+.info-box {
+  height: 200px;
+}
+
+.custom-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Table Section */
+.pending-box {
+  color: rgb(194, 118, 4);
+}
+.unfulfilled-box {
+  background-color: #fee1e1;
 }
 
 /* Mobile Screen */

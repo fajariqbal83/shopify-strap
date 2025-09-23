@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dashboard</title>
+    <title>shopify orders</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,9 +50,9 @@
             </svg>
           </a>
           <div class="tab-side fs-6">
-            <a class="dashboard-button" href="sstrapdashboard.html"
-              >Dashboard</a
-            >
+            <a class="dashboard-button" href="sstrapdashboard.html">
+              Dashboard
+            </a>
           </div>
         </div>
         <div class="sidebar-tab d-flex flex-row align-items-center gap-2 p-3">
@@ -90,7 +90,7 @@
           <div class="tab-side fs-6">Order Processing</div>
         </div>
         <div class="sidebar-tab d-flex flex-row align-items-center gap-2 p-3">
-          <a class="dashboard-button" href="sstrapdashboard.html">
+          <a class="dashboard-button" href="sstraporders.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="19"
@@ -105,9 +105,9 @@
             </svg>
           </a>
           <div class="tab-side fs-6">
-            <a class="dashboard-button" href="sstrapdashboard.html"
-              >Shopify Orders</a
-            >
+            <a class="dashboard-button" href="sstraporders.html">
+              Shopify Orders
+            </a>
           </div>
         </div>
         <div class="sidebar-tab d-flex flex-row align-items-center gap-2 p-3">
@@ -259,7 +259,7 @@
       </div>
     </nav>
     <!--Header-Section-->
-    <div class="header-bg fixed-top fixed-right bg-white">
+    <header class="header-bg fixed-top fixed-right bg-white">
       <div
         class="header-text d-flex align-items-center justify-content-between"
       >
@@ -287,48 +287,774 @@
           </div>
         </div>
       </div>
-    </div>
-    <!--Dashboard-Section-->
+    </header>
+    <!--shopify-order-Section-->
     <div
-      class="dashboard-section d-flex align-items-center justify-content-between mb-4"
+      class="dashboard-section d-flex flex-column flex-xxl-row text-center text-xxl-start align-items-center justify-content-between mb-4"
     >
       <div class="dashboard-text">
-        <div class="fw-bold fs-2">Dashboard</div>
+        <div class="fw-bold fs-2">Shopify Orders</div>
         <div class="text-secondary fs-5">
-          Welcome back! Here's what's happening with your store.
+          View and manage your shopify orders with advanced filtering and
+          analytics
         </div>
       </div>
-      <div class="d-flex align-items-center gap-2">
-        <div>
-          <button type="button" class="btn btn-outline-dark">
-            Last 30 days
-          </button>
-        </div>
-        <div>
+      <div class="d-flex align-items-center gap-2 mt-3 mt-xxl-0">
+        <button type="button" class="btn btn-outline-dark fs-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
+            width="20"
+            height="20"
             fill="currentColor"
             class="bi bi-arrow-repeat"
             viewBox="0 0 16 16"
           >
             <path
               d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"
-            />
+            ></path>
             <path
               fill-rule="evenodd"
               d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"
-            />
+            ></path>
           </svg>
+          Refresh
+        </button>
+        <button type="button" class="btn btn-primary fs-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-arrow-repeat"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"
+            ></path>
+          </svg>
+          Sync orders
+        </button>
+      </div>
+    </div>
+    <!--Box-Section-->
+    <div
+      class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-4 gx-3 gy-3"
+    >
+      <div class="col">
+        <div
+          class="d-flex align-items-center justify-content-center justify-content-xxl-start bg-white p-3 p-md-5 info-box rounded-2 border border-1"
+        >
+          <div
+            class="d-flex flex-column flex-xxl-row text-center text-xxl-start align-items-center gap-3"
+          >
+            <button class="btn-custom-sky p-2 border-0 rounded-3 custom-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-handbag text-primary"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"
+                />
+              </svg>
+            </button>
+            <div>
+              <div class="text-secondary">Total Orders</div>
+              <div class="fw-bold fs-3">10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div
+          class="d-flex align-items-center justify-content-center justify-content-xxl-start bg-white p-3 p-md-5 info-box rounded-2 border border-1"
+        >
+          <div
+            class="d-flex flex-column flex-xxl-row text-center text-xxl-start align-items-center gap-3"
+          >
+            <button
+              class="btn-custom-green p-2 border-0 rounded-3 custom-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-currency-dollar text-success"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"
+                />
+              </svg>
+            </button>
+            <div>
+              <div class="text-secondary">Total Revenue</div>
+              <div class="fw-bold fs-3">Rs 29,138.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div
+          class="d-flex align-items-center justify-content-center justify-content-xxl-start bg-white p-3 p-md-5 info-box rounded-2 border border-1"
+        >
+          <div
+            class="d-flex flex-column flex-xxl-row text-center text-xxl-start align-items-center gap-3"
+          >
+            <button
+              class="btn-custom-orange p-2 border-0 rounded-3 custom-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-graph-up-arrow my-custom-svggraph"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </button>
+            <div>
+              <div class="text-secondary">Avg Order Value</div>
+              <div class="fw-bold fs-3">Rs 2,1913.80</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div
+          class="d-flex align-items-center justify-content-center justify-content-xxl-start bg-white info-box p-3 p-md-5 rounded-2 border border-1"
+        >
+          <div
+            class="d-flex flex-column flex-xxl-row text-center text-xxl-start align-items-center gap-3"
+          >
+            <button
+              class="btn-custom-purple p-2 border-0 rounded-3 custom-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-box my-custom-box"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"
+                />
+              </svg>
+            </button>
+            <div>
+              <div class="text-secondary">Total Items</div>
+              <div class="fw-bold fs-3">22</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
- <script
+    <!--Filter Section-->
+    <div class="bg-white border border-1 rounded-2 p-4 mt-4">
+      <div
+        class="d-flex flex-column flex-sm-row align-items-center justify-content-between mb-3"
+      >
+        <div class="fs-3 fw-bold">Filter</div>
+        <button type="button" class="btn btn-outline-dark">Clear All</button>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-xxl-3 gx-3 gy-3 align-items-center mb-3"
+      >
+        <div class="col">
+          <div class="fs-5">Search Order</div>
+          <input
+            class="border border-1 rounded-2 w-100 p-2 fs-5"
+            type="search"
+            placeholder="Search by order name or shopify ID..."
+            aria-label="Search"
+          />
+        </div>
+        <div class="col">
+          <div class="fs-5">Date Range</div>
+          <div class="d-flex flex-column flex-xl-row align-items-center gap-2">
+            <div
+              class="d-flex align-items-center justify-content-between w-100 bg-white border border-1 rounded-2 p-2"
+            >
+              <div class="fs-5">08/29/2025</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-calendar"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                />
+              </svg>
+            </div>
+            <div class="fs-5">to</div>
+            <div
+              class="d-flex align-items-center justify-content-between w-100 bg-white border border-1 rounded-2 p-2"
+            >
+              <div class="fs-5">08/29/2025</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-calendar"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-5">Financial Status</div>
+          <div
+            class="d-flex align-items-center justify-content-between bg-white border border-1 rounded-2 p-2"
+          >
+            <div class="fs-5">Select financial status</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-xxl-3 gx-3 gy-3 align-items-center mb-3"
+      >
+        <div class="col">
+          <div class="fs-5">Fulfillment Status</div>
+          <div
+            class="d-flex align-items-center justify-content-between bg-white border border-1 rounded-2 p-2"
+          >
+            <div class="fs-5">Select fullfillment status</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-5">Sync Status</div>
+          <div
+            class="d-flex align-items-center justify-content-between bg-white border border-1 rounded-2 p-2"
+          >
+            <div class="fs-5">Select sync status</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-5">Returns Filters</div>
+          <div
+            class="d-flex align-items-center justify-content-between bg-white border border-1 rounded-2 p-2"
+          >
+            <div class="fs-5">Filter by returns</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-bottom border-1 border-secondary opacity-25 w-100 mt-4 mb-4"
+      ></div>
+      <button type="button" class="btn btn-dark fs-4">Refresh</button>
+      <div
+        class="border-bottom border-1 border-secondary opacity-25 w-100 mt-4 mb-4"
+      ></div>
+      <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
+        <div class="fs-5 text-secondary">Active filters:</div>
+        <button class="custom-date border-0 rounded-3">
+          <div class="fs-5 text-primary">Dates: 2025-08-29 to 2025-08-29</div>
+        </button>
+      </div>
+    </div>
+    <!--Table Section One-->
+    <div class="border border-1 rounded-3 bg-white p-5 mt-4">
+      <div class="table-responsive  border border-1 rounded-3">
+        <table class="table">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Order Name <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg></span></th>
+              <th scope="col">Tracking ID</th>
+              <th scope="col">Created <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg></span></th>
+              <th scope="col">Financial Status</th>
+              <th scope="col">Fullfillment Status</th>
+              <th scope="col">Total <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg></span></th>
+              <th scope="col">Net Quantity</th>
+              <th scope="col">Discounts</th>
+              <th scope="col">Shipping Cost</th>
+              <th scope="col">Inventory Cost</th>
+              <th scope="col">Tax</th>
+              <th scope="col">Return Status</th>
+              <th scope="col">Return Orders Price</th>
+              <th scope="col">Sync Status</th>
+              <th scope="col">Last Synced</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">#kt3092wh</th>
+              <td class="text-secondary">No tracking</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="unfulfilled-box text-danger border-0 rounded-4 px-3"
+                >
+                  UNFULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 3,493.00</td>
+              <td class="fw-bold">2</td>
+              <td class="text-success">Rs 0.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 1,720.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3091wh</th>
+              <td class="text-secondary">No tracking</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="unfulfilled-box text-danger border-0 rounded-4 px-3"
+                >
+                  UNFULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 4,297.00</td>
+              <td class="fw-bold">3</td>
+              <td class="text-success">Rs 195.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 2,350.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3090wh</th>
+              <td class="text-primary">23372980001857</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="fulfilled-box text-success border-0 rounded-4 px-3"
+                >
+                  FULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 2,293.00</td>
+              <td class="fw-bold">2</td>
+              <td class="text-success">Rs 0.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 1,000.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3089wh</th>
+              <td class="text-primary">23372980001858</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="fulfilled-box text-success border-0 rounded-4 px-3"
+                >
+                  FULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 3,193.00</td>
+              <td class="fw-bold">2</td>
+              <td class="text-success">Rs 0.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 1,555.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3088wh</th>
+              <td class="text-primary">23372980001849</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="fulfilled-box text-success border-0 rounded-4 px-3"
+                >
+                  FULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 3,193.00</td>
+              <td class="fw-bold">2</td>
+              <td class="text-success">Rs 0.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 1,605.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3087wh</th>
+              <td class="text-primary">23372980001850</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="fulfilled-box text-success border-0 rounded-4 px-3"
+                >
+                  FULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 3,393.00</td>
+              <td class="fw-bold">2</td>
+              <td class="text-success">Rs 0.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 1,602.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3086wh</th>
+              <td class="text-primary">23372980001851</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="fulfilled-box text-success border-0 rounded-4 px-3"
+                >
+                  FULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 3,292.00</td>
+              <td class="fw-bold">3</td>
+              <td class="text-success">Rs 0.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 1,210.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3085wh</th>
+              <td class="text-primary">23372980001852</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="fulfilled-box text-success border-0 rounded-4 px-3"
+                >
+                  FULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 1,093.00</td>
+              <td class="fw-bold">3</td>
+              <td class="text-success">Rs 0.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 440.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3084wh</th>
+              <td class="text-primary">23372980001853</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="pending-box border-0 rounded-4 px-3">
+                  PENDING
+                </button>
+              </td>
+              <td>
+                <button
+                  class="fulfilled-box text-success border-0 rounded-4 px-3"
+                >
+                  FULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 4,297.00</td>
+              <td class="fw-bold">3</td>
+              <td class="text-success">Rs 195.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 2.355.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+            <tr>
+              <th scope="row">#kt3083wh</th>
+              <td class="text-primary">23372980001854</td>
+              <td class="text-secondary">Aug 29,2025</td>
+              <td>
+                <button class="paid-box text-success border-0 rounded-4 px-3">
+                  PAID
+                </button>
+              </td>
+              <td>
+                <button
+                  class="fulfilled-box text-success border-0 rounded-4 px-3"
+                >
+                  FULFILLED
+                </button>
+              </td>
+              <td class="fw-bold">Rs 1,594.00</td>
+              <td class="fw-bold">1</td>
+              <td class="text-success">Rs 0.00</td>
+              <td>Rs 195.00</td>
+              <td class="text-danger">Rs 790.00</td>
+              <td>Rs 0.00</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  No Return
+                </button>
+              </td>
+              <td>-</td>
+              <td>
+                <button
+                  class="noreturn-box text-success border-0 rounded-4 px-3"
+                >
+                  Synced
+                </button>
+              </td>
+              <td class="text-secondary">Aug 30,2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
   </body>
 </html>
-
