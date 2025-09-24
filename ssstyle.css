@@ -94,7 +94,7 @@ body {
 }
 
 /* Mobile Screen */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   body {
     padding: 90px 10px 10px 70px;
   }
@@ -131,7 +131,7 @@ body {
   }
 }
 /* Tablet Screen */
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media only screen and (min-width: 576px) and (max-width: 992px) {
   body {
     padding: 100px 20px 20px 100px;
   }
